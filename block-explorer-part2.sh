@@ -70,20 +70,21 @@ EOF
 
 # create zcash.conf
 cat << EOF > data/zcash.conf
-addnode=mainnet.z.cash
-server=1
-whitelist=127.0.0.1
+rpcallowip=127.0.0.1
+rpcuser=komodo
+rpcpassword=431F2b48d!01e.
 txindex=1
+addnode=5.9.102.210
+addnode=78.47.196.146
+addnode=178.63.69.164
+addnode=88.198.65.74
+addnode=5.9.122.241
+addnode=144.76.94.38
+addnode=89.248.166.91
+whitelist=127.0.0.1
 addressindex=1
 timestampindex=1
 spentindex=1
-zmqpubrawtx=tcp://127.0.0.1:8332
-zmqpubhashblock=tcp://127.0.0.1:8332
-rpcallowip=127.0.0.1
-rpcuser=bitcoin
-rpcpassword=local321
-uacomment=bitcore
-showmetrics=0
 
 EOF
 
